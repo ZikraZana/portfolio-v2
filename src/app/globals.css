@@ -19,5 +19,9 @@
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+.text-poppins{
   font-family: var(--font-poppins);
 }
+
