@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navbar: #1E2124;
+  --color-primary: black;
+  --radius-6xl: 4rem;
 }
 
 :root {
@@ -11,13 +12,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    
   }
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
 }
 
@@ -25,3 +25,7 @@ body {
   font-family: var(--font-poppins);
 }
 
+svg {
+  width: auto !important;
+  height: auto !important;
+}
