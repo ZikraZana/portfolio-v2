@@ -4,13 +4,13 @@ const Navbar = () => {
     return (
         <div className="w-full fixed text-black">
             <nav className="p-5 flex justify-between">
-                <div className="">
+                <div className="ms-10">
                     <h1 className="text-poppins font-bold">MonoZikk</h1>
                 </div>
                 <div className="">
                     <ul className="flex gap-5">
-                        <li className="">
-                            <Link href={"/"}>
+                        <li>
+                            <Link href={"/"} className="border-b-2 w-full">
                                 Home
                             </Link>
                         </li>
@@ -31,7 +31,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="divider">
+                <div className="divider me-10">
                     <svg width="100" height="0" >
                     </svg>
                 </div>

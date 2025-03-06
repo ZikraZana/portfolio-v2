@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: black;
+  --color-bg_primary: #E7E7E7;
+  --color-bg_secondary:  ;
+  --color-behind_img: #D3D3D3;
+  --color-behind_sosmed: #D1CFD0 ;
   --radius-6xl: 4rem;
 }
 
