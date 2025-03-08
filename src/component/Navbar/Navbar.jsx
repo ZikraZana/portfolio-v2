@@ -31,7 +31,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="divider me-10">
+                <div className="me-10">
                     <svg width="100" height="0" >
                     </svg>
                 </div>

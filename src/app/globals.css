@@ -1,27 +1,21 @@
 @import "tailwindcss";
+@plugin "daisyui" {
+  themes: dark --default, light --prefersdark;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
+}
 
 @theme {
   --color-bg_primary: #E7E7E7;
   --color-bg_secondary:  ;
   --color-behind_img: #D3D3D3;
   --color-behind_sosmed: #D1CFD0 ;
+  --color-shadow_primary: #ffffff80;
+  
   --radius-6xl: 4rem;
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    
-  }
-}
-
-body {
-  background: var(--background);
 }
 
 .text-poppins{
