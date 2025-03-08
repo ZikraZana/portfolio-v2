@@ -17,7 +17,7 @@ const Content_Home = () => {
                     </div>
                     <div className="p-10 flex justify-center items-center">
                         <img
-                            src="foto_diri.jpg"
+                            src="profile/foto_diri.jpg"
                             className="rounded-full border-4 shadow-[0px_0px_15px_10px_rgba(255,255,255,0.5)] border-behind_img"
                             alt=""
                             width={"300px"}
@@ -46,7 +46,7 @@ const Content_Home = () => {
                         <figure>
                             <img
                                 className="aspect-3/2 p-2"
-                                src="OSN-Informatika.jpg"
+                                src="achievements/OSN-Informatika.jpg"
                             />
                         </figure>
                         <div className="card-body">
@@ -59,7 +59,7 @@ const Content_Home = () => {
                         <figure>
                             <img
                                 className="aspect-3/2 p-2"
-                                src="Kotlin-Knight.jpg" />
+                                src="achievements/Kotlin-Knight.jpg" />
                         </figure>
                         <div className="card-body">
                             <h2 className="card-title">
@@ -71,7 +71,7 @@ const Content_Home = () => {
                         <figure>
                             <img
                                 className="aspect-3/2 p-2"
-                                src="Skilvull.jpg" />
+                                src="achievements/Skilvull.jpg" />
                         </figure>
                         <div className="card-body">
                             <h2 className="card-title">
