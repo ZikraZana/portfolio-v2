@@ -7,92 +7,94 @@ const Content_Home = () => {
     return (
         <>
             <div className="min-h-screen flex flex-col justify-between bg-bg_primary">
-                <div className="grid grid-cols-[1.5fr_1fr] p-30 mt-9">
-                    <div className=" flex justify-center items-center flex-col">
+                <div className="grid md:grid-cols-[1.5fr_1fr] lg:p-30 md:p-15 py-5 mt-9 grid-cols-1">
+                    <div className="md:order-1 order-2 flex justify-center items-center flex-col">
                         <div className="p-10 ">
-                            <p className="font-bold text-poppins text-xl mb-3">Hello, I'm Zikra Zana</p>
-                            <p className="text-4xl font-bold text-poppins mb-3">Web Developer</p>
-                            <p className="text-md">I am a student of the Information Systems program at Universitas Jambi with a strong passion for web development. I am always eager to learn about the latest technologies and trends in the industry, especially in building innovative and efficient digital solutions.</p>
+                            <p className="sm:font-bold sm:text-poppins sm:text-xl text-md md:mb-3 mb-1 md:text-start text-center">Hello, I'm Zikra Zana</p>
+                            <p className="sm:text-4xl text-3xl font-bold text-poppins md:mb-3 mb-1 md:text-start text-center">Web Developer</p>
+                            <p className="text-md md:text-start text-center">I am a student of the Information Systems program at Universitas Jambi with a strong passion for web development. I am always eager to learn about the latest technologies and trends in the industry, especially in building innovative and efficient digital solutions.</p>
                         </div>
                     </div>
-                    <div className="p-10 flex justify-center items-center">
+                    <div className="md:order-2 order-1 sm:p-10 pt-15 flex justify-center items-center">
                         <img
                             src="profile/foto_diri.jpg"
-                            className="rounded-full border-4 shadow-[0px_0px_15px_10px_rgba(255,255,255,0.5)] border-behind_img"
+                            className="rounded-full sm:w-[300px] w-[200px] border-4 shadow-[0px_0px_15px_10px_rgba(255,255,255,0.5)] border-behind_img"
                             alt=""
-                            width={"300px"}
                         />
 
                     </div>
                 </div>
                 <div className="flex justify-center ">
                     <div className="flex p-2 px-20 gap-8 bg-behind_sosmed rounded-t-6xl">
-                        <FontAwesomeIcon icon={faFacebook} width={'30px'} className="hover:text-blue-700 cursor-pointer"/>
-                        <FontAwesomeIcon icon={faInstagram} width={'30px'} className="hover:text-pink-700 cursor-pointer"/>
-                        <FontAwesomeIcon icon={faGithub} width={'30px'} className="hover:text-gray-600 cursor-pointer"/>
-                        <FontAwesomeIcon icon={faLinkedin} width={'30px'} className="hover:text-blue-600 cursor-pointer"/>
+                        <FontAwesomeIcon icon={faFacebook} width={'30px'} className="hover:text-blue-700 cursor-pointer" />
+                        <FontAwesomeIcon icon={faInstagram} width={'30px'} className="hover:text-pink-700 cursor-pointer" />
+                        <FontAwesomeIcon icon={faGithub} width={'30px'} className="hover:text-gray-600 cursor-pointer" />
+                        <FontAwesomeIcon icon={faLinkedin} width={'30px'} className="hover:text-blue-600 cursor-pointer" />
                     </div>
                 </div>
             </div>
 
             {/* Achievements */}
-            <div className="bg-behind_sosmed px-40 p-25">
+            <div className="bg-behind_sosmed lg:px-40 sm:px-10 sm:p-25 p-8">
                 <div className="mb-10 flex justify-between items-center">
-                    <p className="text-3xl font-bold border-b-2 w-fit text-poppins">Achievements</p>
-                    <p className="text-md hover:underline cursor-pointer transition-all">Show More</p>
+                    <p className="sm:text-3xl text-xl font-bold border-b-2 w-fit text-poppins">Achievements</p>
+                    <p className="sm:text-md text-sm hover:underline cursor-pointer transition-all">Show More</p>
                 </div>
-                <div className=" grid grid-cols-3 gap-5">
-                    <div className="card bg-bg_primary w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
+                <div className=" grid md:grid-cols-3 grid-cols-1 justify-center gap-5">
+                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
                         <figure>
                             <img
-                                className="aspect-3/2 p-2"
+                                className="aspect-3/2 p-2 w-full"
                                 src="achievements/OSN-Informatika.jpg"
                             />
                         </figure>
-                        <div className="card-body">
+                        <div className="card-body max-md:p-3">
                             <h2 className="card-title">
                                 <p className="text-center">Card Title</p>
                             </h2>
                         </div>
                     </div>
-                    <div className="card bg-bg_primary w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
+                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
                         <figure>
                             <img
-                                className="aspect-3/2 p-2"
-                                src="achievements/Kotlin-Knight.jpg" />
+                                className="aspect-3/2 p-2 w-full"
+                                src="achievements/Kotlin-Knight.jpg"
+                            />
                         </figure>
-                        <div className="card-body">
+                        <div className="card-body max-md:p-3">
                             <h2 className="card-title">
                                 <p className="text-center">Card Title</p>
                             </h2>
                         </div>
                     </div>
-                    <div className="card bg-bg_primary w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
+                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
                         <figure>
                             <img
-                                className="aspect-3/2 p-2"
-                                src="achievements/Skilvull.jpg" />
+                                className="aspect-3/2 p-2 w-full"
+                                src="achievements/Skilvull.jpg"
+                            />
                         </figure>
-                        <div className="card-body">
+                        <div className="card-body max-md:p-3">
                             <h2 className="card-title">
                                 <p className="text-center">Card Title</p>
                             </h2>
                         </div>
                     </div>
-
                 </div>
             </div>
 
             {/* Skills */}
-            <div className="bg-bg_primary px-40 p-20">
-                <div className="flex flex-col gap-4 mb-8 justify-center items-center">
+            <div className="bg-bg_primary lg:px-40 px-10 lg:p-20 p-10">
+                <div className="flex flex-col max-md:hidden gap-4 mb-8 justify-center items-center">
                     <h1 className="text-4xl font-bold border-b-2 w-fit text-poppins">My Skills</h1>
                     <h3 className="text-lg font-light ">Skill yang telah saya pelajari selama ini</h3>
                 </div>
-                <div className="grid grid-cols-2">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="grid grid-rows-2">
                         <h2 className="text-2xl font-bold text-center">Framework & Libraries</h2>
-                        <div className="mt-2 justify-center flex gap-3">
+
+                        <div className="mt-2 justify-center flex flex-wrap gap-3">
                             <div className="relative group">
                                 <p className="absolute opacity-0 group-hover:opacity-100 -top-6 left-1/2 -translate-x-1/2">Laravel</p>
                                 <div className="border rounded w-[52px] h-[52px] p-1.5 flex justify-center items-center">
@@ -160,6 +162,7 @@ const Content_Home = () => {
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
