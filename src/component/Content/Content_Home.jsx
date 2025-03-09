@@ -91,7 +91,7 @@ const Content_Home = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="grid grid-rows-2">
+                    <div className="grid grid-rows-[auto_1fr] gap-4">
                         <h2 className="text-2xl font-bold text-center">Framework & Libraries</h2>
 
                         <div className="mt-2 justify-center flex flex-wrap gap-3">
@@ -145,7 +145,7 @@ const Content_Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid grid-rows-2">
+                    <div className="grid grid-rows-[auto_1fr] gap-4">
                         <h2 className="text-2xl font-bold text-center">Programming Language</h2>
                         <div className="mt-2 justify-center flex gap-3">
                             <div className="relative group">
