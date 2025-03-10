@@ -3,10 +3,13 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { DotsThreeCircleVertical } from "@phosphor-icons/react";
+
 
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -52,34 +55,34 @@ const Navbar = () => {
 
                     </div>
                     <div className="md:me-10">
-                        <div className="md:hidden flex items-center justify-center">
-                            <FontAwesomeIcon icon={faBars} width={'30px'} className="cursor-pointer" />
+                        <div className="md:hidden flex items-center justify-center me-1 fixed right-3 top-3">
+                            <DotsThreeCircleVertical size={45} weight="light" className="cursor-pointer" onClick={() => setIsSidebarOpen(!isSidebarOpen)} />
                         </div>
                         <svg className="max-md:hidden" width="100" height="0"></svg>
                     </div>
                 </nav>
             </div>
-            <div className="flex justify-end md:hidden">
+            <div className={`flex justify-end md:hidden `}>
                 {/* Mobile & Tablet */}
-                <ul className="gap-5 absolute pt-20">
-                    <li>
+                <ul className={`gap-5 mt-20 fixed z-[999] transition-all duration-300 transform ${isSidebarOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}>
+                    <li className="py-1">
                         <Link href={"/"}>
-                            <button className="btn border-2 border-white px-2 py-1 pe-10 rounded-full hover:bg-white hover:text-black text-md">Home</button>
+                            <button className="btn border-2 border-black px-2 py-1 w-32 me-5 rounded-full hover:bg-white hover:text-black text-md">Home</button>
                         </Link>
                     </li>
-                    <li>
+                    <li className="py-1">
                         <Link href={"/blog"}>
-                            <button className="btn border-2 border-white px-2 py-1 pe-10 rounded-full hover:bg-white hover:text-black text-md">My Blog</button>
+                            <button className="btn border-2 border-black px-2 py-1 w-32 rounded-full hover:bg-white hover:text-black text-md">My Blog</button>
                         </Link>
                     </li>
-                    <li>
+                    <li className="py-1">
                         <Link href={"/my-project"}>
-                            <button className="btn border-2 border-white px-2 py-1 pe-10 rounded-full hover:bg-white hover:text-black text-md">My Project</button>
+                            <button className="btn border-2 border-black px-2 py-1 w-32 rounded-full hover:bg-white hover:text-black text-md">My Project</button>
                         </Link>
                     </li>
-                    <li>
+                    <li className="py-1">
                         <Link href={"/about"}>
-                            <button className="btn border-2 border-white px-2 py-1 pe-10 rounded-full hover:bg-white hover:text-black text-md">About</button>
+                            <button className="btn border-2 border-black px-2 py-1 w-32 rounded-full hover:bg-white hover:text-black text-md">About</button>
                         </Link>
                     </li>
                 </ul>
