@@ -4,10 +4,12 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { DotsThreeCircleVertical } from "@phosphor-icons/react";
+import { usePathname } from "next/navigation";
 
 
 
 const Navbar = () => {
+    const pathname = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -28,28 +30,27 @@ const Navbar = () => {
 
     return (
         <>
-            <div className={`w-full fixed top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}>
-                <nav className="p-5 flex justify-between">
+            <div className={`w-full fixed top-0 z-50`}>
+                <nav className={`p-5 flex justify-between transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}>
                     <div className="lg:ms-10">
                         <h1 className="text-poppins max-md:text-xl font-bold">MonoZikk</h1>
                     </div>
                     <div>
                         {/* Desktop */}
                         <ul className="flex gap-5 max-md:hidden">
-                            <li>
-                                <Link href={"/"} className="border-b-2 w-full">
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href={"/blog"}>My Blog</Link>
-                            </li>
-                            <li>
-                                <Link href={"/my-project"}>My Project</Link>
-                            </li>
-                            <li>
-                                <Link href={"/about"}>About</Link>
-                            </li>
+                            {[
+                                { name: "Home", path: "/" },
+                                { name: "My Blog", path: "/blog" },
+                                { name: "My Project", path: "/project" },
+                                { name: "About", path: "/about" }
+                            ].map((item) => (
+                                <li>
+                                    <Link href={item.path} className={`${pathname === item.path ? 'border-b-2 w-full' : ''} `}>
+                                        {item.name}
+                                    </Link>
+                                </li>
+                            ))}
+
                         </ul>
 
 
@@ -65,26 +66,18 @@ const Navbar = () => {
             <div className={`flex justify-end md:hidden `}>
                 {/* Mobile & Tablet */}
                 <ul className={`gap-5 mt-20 fixed z-[999] transition-all duration-300 transform ${isSidebarOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}>
-                    <li className="py-1">
-                        <Link href={"/"}>
-                            <button className="btn border-2 border-black px-2 py-1 w-32 me-5 rounded-full hover:bg-white hover:text-black text-md">Home</button>
-                        </Link>
-                    </li>
-                    <li className="py-1">
-                        <Link href={"/blog"}>
-                            <button className="btn border-2 border-black px-2 py-1 w-32 rounded-full hover:bg-white hover:text-black text-md">My Blog</button>
-                        </Link>
-                    </li>
-                    <li className="py-1">
-                        <Link href={"/my-project"}>
-                            <button className="btn border-2 border-black px-2 py-1 w-32 rounded-full hover:bg-white hover:text-black text-md">My Project</button>
-                        </Link>
-                    </li>
-                    <li className="py-1">
-                        <Link href={"/about"}>
-                            <button className="btn border-2 border-black px-2 py-1 w-32 rounded-full hover:bg-white hover:text-black text-md">About</button>
-                        </Link>
-                    </li>
+                    {[
+                        { name: "Home", path: "/" },
+                        { name: "My Blog", path: "/blog" },
+                        { name: "My Project", path: "/project" },
+                        { name: "About", path: "/about" }
+                    ].map((item) => (
+                        <li className="py-1">
+                            <Link href={item.path}>
+                                <button className="btn border-2 border-black px-2 py-1 w-32 me-5 rounded-full hover:bg-white hover:text-black text-md">{item.name}</button>
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </>

@@ -26,10 +26,18 @@ const Content_Home = () => {
                 </div>
                 <div className="flex justify-center ">
                     <div className="flex p-2 px-20 gap-8 bg-behind_sosmed rounded-t-6xl">
-                        <FontAwesomeIcon icon={faFacebook} width={'30px'} className="hover:text-blue-700 cursor-pointer" />
-                        <FontAwesomeIcon icon={faInstagram} width={'30px'} className="hover:text-pink-700 cursor-pointer" />
-                        <FontAwesomeIcon icon={faGithub} width={'30px'} className="hover:text-gray-600 cursor-pointer" />
-                        <FontAwesomeIcon icon={faLinkedin} width={'30px'} className="hover:text-blue-600 cursor-pointer" />
+                        <a href="https://www.facebook.com/zikra.zana.5?mibextid=ZbWKwL" target="_blank">
+                            <FontAwesomeIcon icon={faFacebook} width={'30px'} className="hover:text-blue-700 cursor-pointer" />
+                        </a>
+                        <a href="https://www.instagram.com/zikrazana_" target="_blank">
+                            <FontAwesomeIcon icon={faInstagram} width={'30px'} className="hover:text-pink-700 cursor-pointer" />
+                        </a>
+                        <a href="https://github.com/ZikraZana" target="_blank">
+                            <FontAwesomeIcon icon={faGithub} width={'30px'} className="hover:text-gray-600 cursor-pointer" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/zikra-zana-b4964b2b4/" target="_blank">
+                            <FontAwesomeIcon icon={faLinkedin} width={'30px'} className="hover:text-blue-600 cursor-pointer" />
+                        </a>
                     </div>
                 </div>
             </div>
