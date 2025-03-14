@@ -12,7 +12,8 @@ const Content_Home = () => {
                         <div className="p-10 ">
                             <p className="sm:font-bold sm:text-poppins sm:text-xl text-md md:mb-3 mb-1 md:text-start text-center">Hello, I'm Zikra Zana</p>
                             <p className="sm:text-4xl text-3xl font-bold text-poppins md:mb-3 mb-1 md:text-start text-center">Web Developer</p>
-                            <p className="text-md md:text-start text-center">I am a student of the Information Systems program at Universitas Jambi with a strong passion for web development. I am always eager to learn about the latest technologies and trends in the industry, especially in building innovative and efficient digital solutions.</p>
+                            <p className="text-lg md:text-start text-center">I am a student of the Information Systems program at Universitas Jambi with a strong passion for web development. I am always eager to learn about the latest technologies and trends in the industry, especially in building innovative and efficient digital solutions.</p>
+                            <button className="border bg-download_cv text-lg py-1 px-3 rounded mt-3 hover:bg-gray-900 text-white cursor-pointer">Download CV</button>
                         </div>
                     </div>
                     <div className="md:order-2 order-1 sm:p-10 pt-15 flex justify-center items-center">
@@ -49,44 +50,33 @@ const Content_Home = () => {
                     <p className="sm:text-md text-sm hover:underline cursor-pointer transition-all">Show More</p>
                 </div>
                 <div className=" grid md:grid-cols-3 grid-cols-1 justify-center gap-5">
-                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
+                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" >
                         <figure>
                             <img
-                                className="aspect-3/2 p-2 w-full"
+                                className="aspect-3/2 p-3 w-full"
                                 src="achievements/OSN-Informatika.jpg"
                             />
                         </figure>
-                        <div className="card-body max-md:p-3">
-                            <h2 className="card-title">
-                                <p className="text-center">Card Title</p>
-                            </h2>
-                        </div>
+
                     </div>
+                    
                     <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
                         <figure>
                             <img
-                                className="aspect-3/2 p-2 w-full"
+                                className="aspect-3/2 p-3 w-full"
                                 src="achievements/Kotlin-Knight.jpg"
                             />
                         </figure>
-                        <div className="card-body max-md:p-3">
-                            <h2 className="card-title">
-                                <p className="text-center">Card Title</p>
-                            </h2>
-                        </div>
+
                     </div>
                     <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
                         <figure>
                             <img
-                                className="aspect-3/2 p-2 w-full"
+                                className="aspect-3/2 p-3 w-full"
                                 src="achievements/Skilvull.jpg"
                             />
                         </figure>
-                        <div className="card-body max-md:p-3">
-                            <h2 className="card-title">
-                                <p className="text-center">Card Title</p>
-                            </h2>
-                        </div>
+
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import Content_About from "@/component/about/Content_About";
+import Footer from "@/component/Footer/Footer";
 import Navbar from "@/component/Navbar/Navbar";
 
 export default function About() {
@@ -6,6 +7,7 @@ export default function About() {
     <div>
       <Navbar />
       <Content_About/>
+      <Footer/>
     </div>
   );
 }
