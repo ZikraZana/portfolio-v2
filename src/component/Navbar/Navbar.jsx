@@ -31,7 +31,7 @@ const Navbar = () => {
     return (
         <>
             <div className={`w-full fixed top-0 z-50`}>
-                <nav className={`p-5 flex justify-between transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}>
+                <nav className={`p-5 flex justify-between transition-all duration-300 ${isScrolled ? "backdrop-blur-sm shadow-md" : "bg-transparent"}`}>
                     <div className="lg:ms-10">
                         <h1 className="text-poppins max-md:text-xl font-bold">MonoZikk</h1>
                     </div>
@@ -72,12 +72,11 @@ const Navbar = () => {
                         { name: "My Project", path: "/project" },
                         { name: "About", path: "/about" }
                     ].map((item) => (
-                        <li className="py-1">
+                        <li className="py-1 ">
                             <Link href={item.path}>
-                                <button className="btn border-2 border-black px-2 py-1 w-32 me-5 rounded-full hover:bg-white hover:text-black text-md">{item.name}</button>
+                                <button className="btn border-2 border-black px-2 py-1 w-24 me-5 backdrop-blur-sm rounded-full hover:bg-white hover:text-black text-sm">{item.name}</button>
                             </Link>
-                        </li>
-                    ))}
+                        </li>                    ))}
                 </ul>
             </div>
         </>

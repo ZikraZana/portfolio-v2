@@ -1,19 +1,23 @@
-
+"use client"
 import { faFacebook, faInstagram, faGithub, faLinkedin, faLaravel, faReact, faJs, faPhp, faNode, faBootstrap } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
+
+
 const Content_Home = () => {
     return (
         <>
-            <div className="min-h-screen flex flex-col justify-between bg-bg_primary">
+            <div className="min-h-screen flex flex-col justify-between bg-bg_primary text-black">
                 <div className="grid md:grid-cols-[1.5fr_1fr] lg:p-30 md:p-15 py-5 mt-9 grid-cols-1">
                     <div className="md:order-1 order-2 flex justify-center items-center flex-col">
                         <div className="p-10 ">
-                            <p className="sm:font-bold sm:text-poppins sm:text-xl text-md md:mb-3 mb-1 md:text-start text-center">Hello, I'm Zikra Zana</p>
-                            <p className="sm:text-4xl text-3xl font-bold text-poppins md:mb-3 mb-1 md:text-start text-center">Web Developer</p>
-                            <p className="text-lg md:text-start text-center">I am a student of the Information Systems program at Universitas Jambi with a strong passion for web development. I am always eager to learn about the latest technologies and trends in the industry, especially in building innovative and efficient digital solutions.</p>
+                            <p className="sm:font-bold sm:text-poppins text-xl md:mb-3 mb-1 md:text-start text-center">Hello, I'm Zikra Zana</p>
+                            <p className="sm:text-4xl text-2xl font-bold text-poppins md:mb-3 mb-1 md:text-start text-center">Web Developer</p>
+                            <p className="text-lg md:text-start text-center ">I am a student of the Information Systems program at Universitas Jambi with a strong passion for web development. I am always eager to learn about the latest technologies and trends in the industry, especially in building innovative and efficient digital solutions.</p>
+                            <div className="max-md:justify-center flex">
                             <button className="border bg-download_cv text-lg py-1 px-3 rounded mt-3 hover:bg-gray-900 text-white cursor-pointer">Download CV</button>
+                            </div>
                         </div>
                     </div>
                     <div className="md:order-2 order-1 sm:p-10 pt-15 flex justify-center items-center">
@@ -50,34 +54,78 @@ const Content_Home = () => {
                     <p className="sm:text-md text-sm hover:underline cursor-pointer transition-all">Show More</p>
                 </div>
                 <div className=" grid md:grid-cols-3 grid-cols-1 justify-center gap-5">
-                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" >
+                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_1').showModal()}>
                         <figure>
                             <img
                                 className="aspect-3/2 p-3 w-full"
                                 src="achievements/OSN-Informatika.jpg"
                             />
                         </figure>
-
                     </div>
-                    
-                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
+                    <dialog id="my_modal_1" className="modal">
+                        <div className="modal-box bg-bg_primary max-w-3xl">
+                            <h3 className="text-2xl font-bold text-center mb-4 text-poppins">KSNK SMA Bidang Informatika Tingkat Kabupaten</h3>
+                            <img
+                                className="aspect-3/2 w-full rounded-lg shadow-lg"
+                                src="achievements/OSN-Informatika.jpg"
+                            />
+                            <p className="mt-4 text-gray-600 text-center">Juara 5 OSN Informatika Tingkat Kabupaten Tahun 2020</p>
+                            <div className="modal-action mt-6">
+                                <form method="dialog">
+                                    <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_2').showModal()}>
                         <figure>
                             <img
                                 className="aspect-3/2 p-3 w-full"
                                 src="achievements/Kotlin-Knight.jpg"
                             />
                         </figure>
-
                     </div>
-                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]">
+                    <dialog id="my_modal_2" className="modal">
+                        <div className="modal-box bg-bg_primary max-w-3xl">
+                            <h3 className="text-2xl font-bold text-center mb-4 text-poppins">Kotlin Knight</h3>
+                            <img
+                                className="aspect-3/2 w-full rounded-lg shadow-lg"
+                                src="achievements/Kotlin-Knight.jpg"
+                            />
+                            <p className="mt-4 text-gray-600 text-center">Juara 1 Study Club bidang Web Programing HIMASI</p>
+                            <div className="modal-action mt-6">
+                                <form method="dialog">
+                                    <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+
+                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_3').showModal()}>
                         <figure>
                             <img
                                 className="aspect-3/2 p-3 w-full"
                                 src="achievements/Skilvull.jpg"
                             />
                         </figure>
-
                     </div>
+                    <dialog id="my_modal_3" className="modal">
+                        <div className="modal-box bg-bg_primary max-w-3xl">
+                            <h3 className="text-2xl font-bold text-center mb-4 text-poppins">Skilvul</h3>
+                            <img
+                                className="aspect-3/2 w-full rounded-lg shadow-lg"
+                                src="achievements/Skilvull.jpg"
+                            />
+                            <p className="mt-4 text-gray-600 text-center">Peserta Webinar Skilvul: Menguasai Dunia UI/UX Design</p>
+                            <div className="modal-action mt-6">
+                                <form method="dialog">
+                                    <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                    
                 </div>
             </div>
 

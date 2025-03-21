@@ -9,10 +9,10 @@
 }
 
 @theme {
-  --color-bg_primary: #E7E7E7;
+  --color-bg_primary: #F1F5F9;
   --color-bg_secondary:  ;
   --color-behind_img: #D3D3D3;
-  --color-behind_sosmed: #D1CFD0 ;
+  --color-behind_sosmed: #D1D5DB ;
   --color-shadow_primary: #ffffff80;
   --color-download_cv: #3C4049;
   --radius-6xl: 4rem;

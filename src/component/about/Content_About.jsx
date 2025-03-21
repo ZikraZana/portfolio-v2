@@ -9,7 +9,7 @@ const Content_About = () => {
                 <div className="flex justify-end items-end flex-col">
                     <img className="" src="profile/foto_diri.png" alt="" height={'2000px'} />
                 </div>
-                <div className="bg-gray-300 py-25 px-10 text-justify">
+                <div className="bg-slate-100 py-25 px-10 text-justify">
                     <h1 className="text-4xl border-b-2 w-fit mb-6">About Me</h1>
                     <p className="text-3xl font-bold">Zikra Zana</p>
                     <p className="text-xl font-light mb-5">Information System | Jambi University</p>
@@ -57,6 +57,7 @@ const Content_About = () => {
             </div>
 
             {/*  */}
+            <div className="min-h-screen bg-behind_sosmed"></div>
         </>
     )
 }
