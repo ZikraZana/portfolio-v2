@@ -9,7 +9,7 @@ const Content_About = () => {
                 <div className="flex justify-end items-end flex-col max-md:hidden">
                     <img className="" src="profile/foto_diri.png" alt="" height={'2000px'} />
                 </div>
-                <div className=" py-25 px-10">
+                <div className=" py-25 px-10 flex flex-col justify-between">
                     <div className="">
                         <p className="text-3xl font-bold max-md:text-center">Zikra Zana</p>
                         <p className="text-xl font-light mb-5 max-md:hidden">Information System | Jambi University</p>
@@ -17,7 +17,14 @@ const Content_About = () => {
                         <div className="text-xl font-light mb-5 text-center md:hidden">Jambi University</div>
 
                         <p className="text-lg text-justify">
-                            Saya, Zikra Zana, mahasiswa Sistem Informasi di Universitas Jambi dengan minat besar dalam pengembangan web. Saya fokus menguasai Laravel sebagai backend utama dan mengeksplorasi teknologi modern untuk meningkatkan kinerja aplikasi. Selain itu, saya tertarik pada frontend guna menciptakan antarmuka yang interaktif dan responsif. Dengan pemahaman kuat tentang arsitektur web, basis data, dan desain, saya berupaya mengembangkan aplikasi yang fungsional, estetis, dan ramah pengguna. Saya percaya bahwa pembelajaran berkelanjutan dan adaptasi teknologi adalah kunci untuk berkontribusi di dunia pengembangan perangkat lunak.
+                            I am Zikra Zana, an Information Systems student at Universitas
+                            Jambi with a strong passion for web development. I focus on mastering
+                            Laravel as my main backend framework while exploring modern technologies
+                            to enhance application performance. Additionally, I am interested in frontend
+                            development to create interactive and responsive interfaces. With a solid understanding
+                            of web architecture, databases, and design principles, I strive to develop functional,
+                            aesthetic, and user-friendly applications. I believe continuous learning and adaptability
+                            to technology are key to making a meaningful impact in software development.
                         </p>
                     </div>
 

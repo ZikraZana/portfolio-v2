@@ -48,7 +48,7 @@ const Content_Home = () => {
             </div>
 
             {/* Achievements */}
-            <div className="bg-behind_sosmed lg:px-40 sm:px-10 sm:p-25 p-8">
+            <div className="bg-behind_sosmed lg:px-40 sm:px-10 sm:p-25 p-8 text-black">
                 <div className="mb-10 flex justify-between items-center">
                     <p className="sm:text-3xl text-xl font-bold border-b-2 w-fit text-poppins">Achievements</p>
                     <p className="sm:text-md text-sm hover:underline cursor-pointer transition-all">Show More</p>
@@ -69,7 +69,7 @@ const Content_Home = () => {
                                 className="aspect-3/2 w-full rounded-lg shadow-lg"
                                 src="achievements/OSN-Informatika.jpg"
                             />
-                            <p className="mt-4 text-gray-600 text-center">Juara 5 OSN Informatika Tingkat Kabupaten Tahun 2020</p>
+                            <p className="mt-4 text-gray-600 text-center">5th Champion of KSN Informatics at the Regency Level in 2022</p>
                             <div className="modal-action mt-6">
                                 <form method="dialog">
                                     <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
@@ -93,7 +93,7 @@ const Content_Home = () => {
                                 className="aspect-3/2 w-full rounded-lg shadow-lg"
                                 src="achievements/Kotlin-Knight.jpg"
                             />
-                            <p className="mt-4 text-gray-600 text-center">Juara 1 Study Club bidang Web Programing HIMASI</p>
+                            <p className="mt-4 text-gray-600 text-center">1st place in HIMASI Web Programing Study Club</p>
                             <div className="modal-action mt-6">
                                 <form method="dialog">
                                     <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
@@ -117,7 +117,7 @@ const Content_Home = () => {
                                 className="aspect-3/2 w-full rounded-lg shadow-lg"
                                 src="achievements/Skilvull.jpg"
                             />
-                            <p className="mt-4 text-gray-600 text-center">Peserta Webinar Skilvul: Menguasai Dunia UI/UX Design</p>
+                            <p className="mt-4 text-gray-600 text-center">Skilvul Webinar Participants: Mastering the World of UI/UX Design</p>
                             <div className="modal-action mt-6">
                                 <form method="dialog">
                                     <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
@@ -130,7 +130,7 @@ const Content_Home = () => {
             </div>
 
             {/* Skills */}
-            <div className="bg-bg_primary lg:px-40 px-10 lg:p-20 p-10">
+            <div className="bg-bg_primary lg:px-40 px-10 lg:p-20 p-10 text-black">
                 <div className="flex flex-col max-md:hidden gap-4 mb-8 justify-center items-center">
                     <h1 className="text-4xl font-bold border-b-2 w-fit text-poppins">My Skills</h1>
                     <h3 className="text-lg font-light ">Skill yang telah saya pelajari selama ini</h3>
@@ -208,8 +208,6 @@ const Content_Home = () => {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </>
