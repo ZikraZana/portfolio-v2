@@ -44,7 +44,7 @@ const Navbar = () => {
                                 { name: "My Project", path: "/project" },
                                 { name: "About", path: "/about" }
                             ].map((item) => (
-                                <li>
+                                <li key={item.name}>
                                     <Link href={item.path} className={`${pathname === item.path ? 'border-b-2 w-full' : ''} `}>
                                         {item.name}
                                     </Link>
@@ -72,11 +72,11 @@ const Navbar = () => {
                         { name: "My Project", path: "/project" },
                         { name: "About", path: "/about" }
                     ].map((item) => (
-                        <li className="py-1 ">
+                        <li key={item.name} className="py-1 ">
                             <Link href={item.path}>
                                 <button className="btn border-2 border-black px-2 py-1 w-24 me-5 backdrop-blur-sm rounded-full hover:bg-white hover:text-black text-sm">{item.name}</button>
                             </Link>
-                        </li>                    ))}
+                        </li>))}
                 </ul>
             </div>
         </>
