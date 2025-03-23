@@ -8,7 +8,7 @@ import Image from "next/image";
 const Content_Home = () => {
     return (
         <>
-            <div className="min-h-screen flex flex-col justify-between bg-bg_primary text-black">
+            <div className="lg:min-h-screen flex flex-col justify-between bg-bg_primary text-black">
                 <div className="grid md:grid-cols-[1.5fr_1fr] lg:p-30 md:p-15 py-5 mt-9 grid-cols-1">
                     <div className="md:order-1 order-2 flex justify-center items-center flex-col">
                         <div className="p-10 ">
@@ -16,7 +16,7 @@ const Content_Home = () => {
                             <p className="sm:text-4xl text-2xl font-bold text-poppins md:mb-3 mb-1 md:text-start text-center">Web Developer</p>
                             <p className="text-lg md:text-start text-center ">I am a student of the Information Systems program at Universitas Jambi with a strong passion for web development. I am always eager to learn about the latest technologies and trends in the industry, especially in building innovative and efficient digital solutions.</p>
                             <div className="max-md:justify-center flex">
-                            <button className="border bg-download_cv text-lg py-1 px-3 rounded mt-3 hover:bg-gray-900 text-white cursor-pointer">Download CV</button>
+                            <a href="/docs/ZikraCV.pdf" download className="border bg-download_cv text-lg py-1 px-3 rounded mt-3 hover:bg-gray-900 text-white cursor-pointer">Download CV</a>
                             </div>
                         </div>
                     </div>
@@ -46,6 +46,7 @@ const Content_Home = () => {
                     </div>
                 </div>
             </div>
+            
 
             {/* Achievements */}
             <div className="bg-behind_sosmed lg:px-40 sm:px-10 sm:p-25 p-8 text-black">
@@ -53,7 +54,7 @@ const Content_Home = () => {
                     <p className="sm:text-3xl text-xl font-bold border-b-2 w-fit text-poppins">Achievements</p>
                     <p className="sm:text-md text-sm hover:underline cursor-pointer transition-all">Show More</p>
                 </div>
-                <div className=" grid md:grid-cols-3 grid-cols-1 justify-center gap-5">
+                <div className=" grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 justify-center gap-5">
                     <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_1').showModal()}>
                         <figure>
                             <img
@@ -139,7 +140,6 @@ const Content_Home = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="grid grid-rows-[auto_1fr] gap-4">
                         <h2 className="text-2xl font-bold text-center">Framework & Libraries</h2>
-
                         <div className="mt-2 justify-center flex flex-wrap gap-3">
                             <div className="relative group">
                                 <p className="absolute opacity-0 group-hover:opacity-100 -top-6 left-1/2 -translate-x-1/2">Laravel</p>

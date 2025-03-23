@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
         className={`${mulish.variable}, ${poppins.variable} antialiased`}
       >
         {children}
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       </body>
     </html>
   );

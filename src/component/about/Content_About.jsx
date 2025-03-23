@@ -5,7 +5,7 @@ const Content_About = () => {
     return (
         <>
             {/* About Me */}
-            <div className="min-h-screen bg-bg_primary md:grid md:grid-cols-[1fr_1.8fr] ">
+            <div className="lg:min-h-screen bg-bg_primary md:grid md:grid-cols-[1fr_1.8fr] ">
                 <div className="flex justify-end items-end flex-col max-md:hidden">
                     <img className="" src="profile/foto_diri.png" alt="" height={'2000px'} />
                 </div>

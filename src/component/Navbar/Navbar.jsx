@@ -28,6 +28,10 @@ const Navbar = () => {
         };
     }, []);
 
+    const handleAlert = () => {
+        swal("Sorry", "The feature is currently unavailable", "info");
+    };
+
     return (
         <>
             <div className={`w-full fixed top-0 z-50`}>
@@ -45,7 +49,7 @@ const Navbar = () => {
                                 { name: "About", path: "/about" }
                             ].map((item) => (
                                 <li key={item.name}>
-                                    <Link href={item.path} className={`${pathname === item.path ? 'border-b-2 w-full' : ''} `}>
+                                    <Link href={item.path === '/blog' ? '#' : item.path} onClick={item.path === '/blog' ? handleAlert : undefined} className={`${pathname === item.path ? 'border-b-2 w-full' : ''} `}>
                                         {item.name}
                                     </Link>
                                 </li>
@@ -73,7 +77,7 @@ const Navbar = () => {
                         { name: "About", path: "/about" }
                     ].map((item) => (
                         <li key={item.name} className="py-1 ">
-                            <Link href={item.path}>
+                            <Link href={item.path === "/blog" ? '#' : item.path} onClick={item.path === "/blog" ? handleAlert : undefined} >
                                 <button className="btn border-2 border-black px-2 py-1 w-24 me-5 backdrop-blur-sm rounded-full hover:bg-white hover:text-black text-sm">{item.name}</button>
                             </Link>
                         </li>))}

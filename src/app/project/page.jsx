@@ -1,12 +1,12 @@
-import Content_About from "@/component/About/Content_About";
 import Footer from "@/component/Footer/Footer";
 import Navbar from "@/component/Navbar/Navbar";
+import Content_Project from "@/component/Project/Content_Project";
 
-export default function About() {
+export default function Project() {
   return (
     <div>
       <Navbar />
-      <Content_About/>
+      <Content_Project/>
       <Footer/>
     </div>
   );
