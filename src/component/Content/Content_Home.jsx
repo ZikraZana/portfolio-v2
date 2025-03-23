@@ -47,7 +47,6 @@ const Content_Home = () => {
                 </div>
             </div>
             
-
             {/* Achievements */}
             <div className="bg-behind_sosmed lg:px-40 sm:px-10 sm:p-25 p-8 text-black">
                 <div className="mb-10 flex justify-between items-center">
