@@ -1,3 +1,4 @@
+"use client"
 const Footer = () => {
     return (
         <>
@@ -16,7 +17,21 @@ const Footer = () => {
                         <div className="text-white px-10 mx-5">
                             <h3 className="text-2xl font-bold max-md:text-center mb-4">Lets Connect!</h3>
                             <div className="max-md:flex max-md:justify-center max-md:gap-7">
-                                <button className="btn border-2 border-white px-4 py-2 rounded-full hover:bg-white hover:text-black text-md">Email Me</button>
+                                <button className="btn border-2 border-white px-4 py-2 rounded-full hover:bg-white hover:text-black text-md" onClick={() => document.getElementById('my_modal_email').showModal()}>Email Me</button>
+                                <dialog id="my_modal_email" className="modal">
+                                    <div className="modal-box text-black">
+                                        <h3 className="font-bold text-lg">Hello!</h3>
+                                        <input type="text" placeholder="Name" id="name" className="w-full p-2 border border-gray-300 rounded-lg mb-3" />
+                                        <input type="text" placeholder="Email" id="email" className="w-full p-2 border border-gray-300 rounded-lg mb-3" />
+                                        <input type="text" placeholder="Subject" id="subject" className="w-full p-2 border border-gray-300 rounded-lg mb-3" />
+                                        <textarea className="w-full h-32 p-2 rounded-lg border border-gray-300 focus:outline-none focus:border-gray-500" name="message" id="message" placeholder="Write your message here..."></textarea>                                        <div className="modal-action">
+                                            <form method="dialog">
+                                                {/* if there is a button in form, it will close the modal */}
+                                                <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </dialog>
                                 <button className="btn border-2 border-white px-4 py-2 rounded-full hover:bg-white hover:text-black text-md lg:hidden">See Another Project</button>
                             </div>
                         </div>

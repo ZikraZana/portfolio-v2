@@ -5,12 +5,9 @@ const Content_About = () => {
     return (
         <>
             {/* About Me */}
-            <div className="lg:min-h-screen bg-bg_primary md:grid md:grid-cols-[1fr_1.8fr] ">
-                <div className="flex justify-end items-end flex-col max-md:hidden">
-                    <img className="" src="profile/foto_diri.png" alt="" height={'2000px'} />
-                </div>
-                <div className=" py-25 px-10 flex flex-col justify-between">
-                    <div className="">
+            <div className="lg:min-h-screen bg-bg_primary ">
+                <div className="py-25 px-10 flex flex-col justify-between">
+                    <div className="p-5">
                         <p className="text-3xl font-bold max-md:text-center">Zikra Zana</p>
                         <p className="text-xl font-light mb-5 max-md:hidden">Information System | Jambi University</p>
                         <div className="text-xl font-light text-center md:hidden">Information System</div>
@@ -31,28 +28,27 @@ const Content_About = () => {
                     <div className="grid md:grid-cols-2 mt-6 p-5 rounded-2xl gap-6 items-start">
                         <div className="flex flex-col gap-5 h-full">
                             <div className="flex items-center gap-4 bg-white/50 p-3 rounded-lg shadow-sm min-h-[100px]">
-                                <FontAwesomeIcon icon={faLaptopCode} width={'25px'} className="text-gray-700" />
+                                <FontAwesomeIcon icon={faLaptopCode} width="25" className="text-gray-700" />
                                 <p className="text-lg font-medium">Role: Fullstack Developer</p>
                             </div>
                             <div className="flex items-center gap-4 bg-white/50 p-3 rounded-lg shadow-sm min-h-[100px]">
-                                <FontAwesomeIcon icon={faGraduationCap} width={'25px'} className="text-gray-700" />
+                                <FontAwesomeIcon icon={faGraduationCap} width="25" className="text-gray-700" />
                                 <p className="text-lg font-medium">Education: Jambi University</p>
                             </div>
                         </div>
                         <div className="flex flex-col gap-5 h-full">
                             <div className="flex items-center gap-4 bg-white/50 p-3 rounded-lg shadow-sm min-h-[100px]">
-                                <FontAwesomeIcon icon={faLightbulb} width={'25px'} className="text-gray-700" />
+                                <FontAwesomeIcon icon={faLightbulb} width="25" className="text-gray-700" />
                                 <p className="text-lg font-medium">Now Learning: Machine Learning</p>
                             </div>
                             <div className="flex items-center gap-4 bg-white/50 p-3 rounded-lg shadow-sm min-h-[100px]">
-                                <FontAwesomeIcon icon={faLayerGroup} width={'25px'} className="text-gray-700" />
+                                <FontAwesomeIcon icon={faLayerGroup} width="25" className="text-gray-700" />
                                 <p className="text-lg font-medium">Other Skills: Design (Figma, Canva), Music (Guitar)</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             {/*  */}
             <div className="bg-behind_sosmed px-10 py-20 rounded-lg shadow-md">
                 <div className="flex justify-center items-center mb-12 flex-col">
