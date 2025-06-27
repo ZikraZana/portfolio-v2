@@ -49,7 +49,7 @@ const Navbar = () => {
                                 { name: "About", path: "/about" }
                             ].map((item) => (
                                 <li key={item.name}>
-                                    <Link href={item.path === '/blog' ? '#' : item.path} onClick={item.path === '/blog' ? handleAlert : undefined} className={`${pathname === item.path ? 'border-b-2 w-full' : ''} `}>
+                                    <Link href={item.path === '/blog' ? '#' : item.path} onClick={item.path === '/blog' ? handleAlert : undefined} className={`${pathname === item.path ? 'border-b-2 w-full ' : 'hover:text-gray-400 hover:glow-black transition-all duration-300'}`}>
                                         {item.name}
                                     </Link>
                                 </li>
