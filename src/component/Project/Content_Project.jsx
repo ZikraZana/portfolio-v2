@@ -27,14 +27,13 @@ const Content_Project = () => {
                         </div>
                     </div>
                     <dialog id="my_project_1" className="modal">
-                        <div className="modal-box bg-bg_primary max-w-3xl p-6">
+                        <div className="modal-box bg-bg_primary max-w-3xl p-10">
                             <h3 className="text-3xl font-bold text-center mb-6 text-poppins">Personal Website</h3>
                             <img
                                 className="w-full rounded-lg shadow-lg object-cover"
                                 src="project/personal_website.png"
                                 alt="Personal Website Preview"
                             />
-
                             <div className="space-y-6 mt-6">
                                 <div>
                                     <h4 className="text-xl font-semibold text-gray-800 mb-3">Description:</h4>
@@ -44,7 +43,6 @@ const Content_Project = () => {
                                         learn more about my capabilities and view my projects in an organized and visually appealing manner.
                                     </p>
                                 </div>
-
                                 <div>
                                     <h4 className="text-xl font-semibold text-gray-800 mb-3">Key Features:</h4>
                                     <ul className="list-disc ml-6 text-gray-700 space-y-2">
@@ -54,22 +52,32 @@ const Content_Project = () => {
                                         <li>Built with React, Next.js, and Tailwind CSS</li>
                                     </ul>
                                 </div>
-
+                                <div>
+                                    <h4 className="text-xl font-semibold text-gray-800 mb-3">Tech Stack:</h4>
+                                    <ul className="list-disc ml-6 text-gray-700 space-y-2">
+                                        <li>Frontend Framework: React.js</li>
+                                        <li>Framework: Next.js</li>
+                                        <li>Styling: Tailwind CSS + DaisyUI</li>
+                                        <li>Email Service: EmailJS</li>
+                                        <li>Deployment: Vercel</li>
+                                        <li>Version Control: Git & GitHub</li>
+                                    </ul>
+                                </div>
                                 <div>
                                     <h4 className="text-xl font-semibold text-gray-800 mb-3">Team Members:</h4>
                                     <ul className="list-disc ml-6 text-gray-700 space-y-2">
-                                        <li>Fadhil Nugraha</li>
-                                        <li>Daffa Fakhuddin Arrozy</li>
-                                        <li>Fadhil Muhammad</li>
+                                        <li>Zikra Zana (Individual Project)</li>
                                     </ul>
                                 </div>
-
                                 <div className="space-y-2">
                                     <p className="text-gray-700">
-                                        Status: <span className="text-green-600 font-semibold">Hosted on Vercel</span>
+                                        Status: <span className="text-emerald-600 font-semibold">Hosted on Vercel</span>
                                     </p>
                                     <p className="text-gray-700">
-                                        Github: <a href="https://github.com/username/portvolio-v2" className="text-blue-600 hover:text-blue-800 font-semibold underline transition duration-200">portvolio-v2</a>
+                                        Github: <a href="https://github.com/ZikraZana/portfolio-v2" target="blank" className="text-indigo-600 hover:text-indigo-800 font-semibold underline transition duration-200">portvolio-v2</a>
+                                    </p>
+                                    <p className="text-gray-700">
+                                        Visit Website: <a href="https://zikra-portfolio.vercel.app" target="blank" className="text-purple-600 hover:text-purple-800 font-semibold underline transition duration-200">Personal Website</a>
                                     </p>
                                 </div>
 
