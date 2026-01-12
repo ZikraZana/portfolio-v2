@@ -54,7 +54,6 @@ const Content_Blog = () => {
                 <p className="text-gray-600 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Thoughts & Insights</p>
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 text-poppins inline-block relative">
                     My Blog
-                    <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-gray-400 rounded-full"></span>
                 </h1>
 
                 <div className="mt-8 max-w-md mx-auto relative">
