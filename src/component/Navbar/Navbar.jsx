@@ -73,8 +73,7 @@ const Navbar = () => {
                             return (
                                 <Link 
                                     key={item.name} 
-                                    href={item.path === '/blog' ? '#' : item.path}
-                                    onClick={item.path === '/blog' ? handleAlert : undefined}
+                                    href={item.path}
                                     className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 relative group overflow-hidden ${
                                         isActive 
                                         ? "bg-gray-900 text-white shadow-md transform scale-105" 
@@ -136,12 +135,7 @@ const Navbar = () => {
                             return (
                                 <li key={item.name}>
                                     <Link 
-                                        href={item.path === '/blog' ? '#' : item.path}
-                                        onClick={(e) => {
-                                            if (item.path === '/blog') handleAlert();
-                                            setIsSidebarOpen(false);
-                                        }}
-                                        // FIX: Padding dikurangi (py-2.5) & font diperkecil (text-sm)
+                                        href={item.path}
                                         className={`block w-full px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 border ${
                                             isActive 
                                             ? "bg-gray-900 text-white border-gray-900 shadow-md" 
