@@ -10,7 +10,7 @@ const Content_Home = () => {
         <>
             {/* Hero Section */}
             <div className="lg:min-h-screen flex flex-col justify-between bg-bg_primary text-black">
-                <div className="grid md:grid-cols-[1.5fr_1fr] lg:p-30 md:p-15 py-5 mt-9 grid-cols-1">
+                <div className="grid md:grid-cols-[2fr_1fr] lg:p-30 md:p-15 py-5 mt-9 grid-cols-1">
                     <div className="md:order-1 order-2 flex justify-center items-center flex-col">
                         <div className="p-10 ">
                             <p className="sm:font-bold sm:text-poppins text-xl md:mb-3 mb-1 md:text-start text-center">Hello, I'm Zikra Zana</p>
@@ -68,63 +68,66 @@ const Content_Home = () => {
                     <p className="sm:text-3xl text-xl font-bold border-b-2 w-fit text-poppins">Achievements</p>
                     <p className="sm:text-md text-sm hover:underline cursor-pointer transition-all">Show More</p>
                 </div>
-                <div className=" grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 justify-center gap-5">
-                    {/* Modal 1 */}
-                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_1').showModal()}>
-                        <figure>
-                            <img className="aspect-3/2 p-3 w-full" src="achievements/OSN-Informatika.jpg" />
-                        </figure>
-                    </div>
-                    <dialog id="my_modal_1" className="modal">
-                        <div className="modal-box bg-bg_primary max-w-3xl">
-                            <h3 className="text-2xl font-bold text-center mb-4 text-poppins">KSNK SMA Bidang Informatika Tingkat Kabupaten</h3>
-                            <img className="aspect-3/2 w-full rounded-lg shadow-lg" src="achievements/OSN-Informatika.jpg" />
-                            <p className="mt-4 text-gray-600 text-center">5th Champion of KSN Informatics at the Regency Level in 2022</p>
-                            <div className="modal-action mt-6">
-                                <form method="dialog">
-                                    <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
-                                </form>
-                            </div>
-                        </div>
-                    </dialog>
+                <div className="flex flex-col items-center">
 
-                    {/* Modal 2 */}
-                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_2').showModal()}>
-                        <figure>
-                            <img className="aspect-3/2 p-3 w-full" src="achievements/Kotlin-Knight.jpg" />
-                        </figure>
-                    </div>
-                    <dialog id="my_modal_2" className="modal">
-                        <div className="modal-box bg-bg_primary max-w-3xl">
-                            <h3 className="text-2xl font-bold text-center mb-4 text-poppins">Kotlin Knight</h3>
-                            <img className="aspect-3/2 w-full rounded-lg shadow-lg" src="achievements/Kotlin-Knight.jpg" />
-                            <p className="mt-4 text-gray-600 text-center">1st place in HIMASI Web Programing Study Club</p>
-                            <div className="modal-action mt-6">
-                                <form method="dialog">
-                                    <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
-                                </form>
-                            </div>
+                    <div className=" grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 justify-center gap-5">
+                        {/* Modal 1 */}
+                        <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_1').showModal()}>
+                            <figure>
+                                <img className="aspect-3/2 p-3 w-full" src="achievements/OSN-Informatika.jpg" />
+                            </figure>
                         </div>
-                    </dialog>
+                        <dialog id="my_modal_1" className="modal">
+                            <div className="modal-box bg-bg_primary max-w-3xl">
+                                <h3 className="text-2xl font-bold text-center mb-4 text-poppins">KSNK SMA Bidang Informatika Tingkat Kabupaten</h3>
+                                <img className="aspect-3/2 w-full rounded-lg shadow-lg" src="achievements/OSN-Informatika.jpg" />
+                                <p className="mt-4 text-gray-600 text-center">5th Champion of KSN Informatics at the Regency Level in 2022</p>
+                                <div className="modal-action mt-6">
+                                    <form method="dialog">
+                                        <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
 
-                    {/* Modal 3 */}
-                    <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_3').showModal()}>
-                        <figure>
-                            <img className="aspect-3/2 p-3 w-full" src="achievements/Skilvull.jpg" />
-                        </figure>
-                    </div>
-                    <dialog id="my_modal_3" className="modal">
-                        <div className="modal-box bg-bg_primary max-w-3xl">
-                            <h3 className="text-2xl font-bold text-center mb-4 text-poppins">Skilvul</h3>
-                            <img className="aspect-3/2 w-full rounded-lg shadow-lg" src="achievements/Skilvull.jpg" />
-                            <p className="mt-4 text-gray-600 text-center">Skilvul Webinar Participants: Mastering the World of UI/UX Design</p>
-                            <div className="modal-action mt-6">
-                                <form method="dialog">
-                                    <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
-                                </form>
-                            </div>
+                        {/* Modal 2 */}
+                        <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_2').showModal()}>
+                            <figure>
+                                <img className="aspect-3/2 p-3 w-full" src="achievements/Kotlin-Knight.jpg" />
+                            </figure>
                         </div>
-                    </dialog>
+                        <dialog id="my_modal_2" className="modal">
+                            <div className="modal-box bg-bg_primary max-w-3xl">
+                                <h3 className="text-2xl font-bold text-center mb-4 text-poppins">Kotlin Knight</h3>
+                                <img className="aspect-3/2 w-full rounded-lg shadow-lg" src="achievements/Kotlin-Knight.jpg" />
+                                <p className="mt-4 text-gray-600 text-center">1st place in HIMASI Web Programing Study Club</p>
+                                <div className="modal-action mt-6">
+                                    <form method="dialog">
+                                        <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+
+                        {/* Modal 3 */}
+                        <div className="card bg-bg_primary w-full md:w-96 shadow-md hover:shadow-xl cursor-pointer transition ease-in hover:scale-[1.01]" onClick={() => document.getElementById('my_modal_3').showModal()}>
+                            <figure>
+                                <img className="aspect-3/2 p-3 w-full" src="achievements/Skilvull.jpg" />
+                            </figure>
+                        </div>
+                        <dialog id="my_modal_3" className="modal">
+                            <div className="modal-box bg-bg_primary max-w-3xl">
+                                <h3 className="text-2xl font-bold text-center mb-4 text-poppins">Skilvul</h3>
+                                <img className="aspect-3/2 w-full rounded-lg shadow-lg" src="achievements/Skilvull.jpg" />
+                                <p className="mt-4 text-gray-600 text-center">Skilvul Webinar Participants: Mastering the World of UI/UX Design</p>
+                                <div className="modal-action mt-6">
+                                    <form method="dialog">
+                                        <button className="btn bg-download_cv hover:bg-gray-900 text-white px-6 py-2 rounded-lg">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
                 </div>
             </div>
 

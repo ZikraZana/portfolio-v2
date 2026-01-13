@@ -38,7 +38,7 @@ const Footer = () => {
                                 <img src="profile/foto_diri.jpg" alt="" width={'140px'} className="rounded-full" />
                             </div>
                             <div className="flex flex-col justify-center max-md:text-center gap-4 px-3">
-                                <p className="text-md max-md:mt-3">Zikra Zana is a web developer passionate about exploring the latest technologies and committed to creating innovative and efficient digital solutions.</p>
+                                <p className="text-md max-md:mt-3">Zikra Zana is a web developer and tech enthusiast committed to digital transformation. Through continuous learning and innovation, he strives to build scalable applications that empower communities.</p>
                                 <p className="text-md">Email: monozikk13@gmail.com</p>
                             </div>
                         </div>
