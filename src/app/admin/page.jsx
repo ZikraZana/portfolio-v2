@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabaseClient'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignOutAlt, faLayerGroup, faNewspaper, faUserCircle } from '@fortawesome/free-solid-svg-icons'
+import { faSignOutAlt, faLayerGroup, faNewspaper, faUserCircle, faAward } from '@fortawesome/free-solid-svg-icons'
 
 import ProjectManager from '@/component/Admin/ProjectManager'
 import BlogManager from '@/component/Admin/BlogManager'
+import CertificateManager from '@/component/Admin/CertificateManager'
 
 export default function AdminDashboard() {
     const router = useRouter()
@@ -79,8 +80,8 @@ export default function AdminDashboard() {
                     <button
                         onClick={() => setActiveTab('projects')}
                         className={`px-6 py-2.5 text-sm font-semibold rounded-lg flex items-center gap-2 transition-all duration-200 ${activeTab === 'projects'
-                                ? 'bg-white text-gray-900 shadow-sm'
-                                : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
+                            ? 'bg-white text-gray-900 shadow-sm'
+                            : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
                             }`}
                     >
                         {/* FIX: Tambahkan !w-4 !h-4 */}
@@ -90,19 +91,31 @@ export default function AdminDashboard() {
                     <button
                         onClick={() => setActiveTab('blogs')}
                         className={`px-6 py-2.5 text-sm font-semibold rounded-lg flex items-center gap-2 transition-all duration-200 ${activeTab === 'blogs'
-                                ? 'bg-white text-gray-900 shadow-sm'
-                                : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
+                            ? 'bg-white text-gray-900 shadow-sm'
+                            : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
                             }`}
                     >
                         {/* FIX: Tambahkan !w-4 !h-4 */}
                         <FontAwesomeIcon icon={faNewspaper} className="!w-4 !h-4" />
                         Blogs
                     </button>
+                    <button
+                        onClick={() => setActiveTab('certificates')}
+                        className={`px-6 py-2.5 text-sm font-semibold rounded-lg flex items-center gap-2 transition-all duration-200 ${activeTab === 'certificates'
+                            ? 'bg-white text-gray-900 shadow-sm'
+                            : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
+                            }`}
+                    >
+                        <FontAwesomeIcon icon={faAward} className="!w-4 !h-4" />
+                        Certificates
+                    </button>
                 </div>
 
                 {/* Dynamic Content Area */}
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 min-h-[600px]">
-                    {activeTab === 'projects' ? <ProjectManager /> : <BlogManager />}
+                    {activeTab === 'projects' && <ProjectManager />}
+                    {activeTab === 'blogs' && <BlogManager />}
+                    {activeTab === 'certificates' && <CertificateManager />}
                 </div>
 
             </main>

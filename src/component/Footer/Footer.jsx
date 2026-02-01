@@ -30,6 +30,7 @@ const Footer = () => {
 
     return (
         <>
+        
             <div className=" bg-gray-900 sm:px-23 pt-15">
                 <div className="">
                     <div className="grid md:grid-cols-2 gap-13">
